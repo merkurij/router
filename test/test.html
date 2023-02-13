@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test features</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="url">New url</label>
+        <input id="url" type="text" value="/vk/1"/>
+    </div>
+    <div>
+        <label for="hash">New hash</label>
+        <input id="hash" type="text" value='{"s":"Aaaaa"}'/>
+    </div>
+    <div>
+        <label for="state_data">State Data in JSON</label>
+        <textarea id="state_data"></textarea>
+    </div>
+    <ul>
+        <li><button id="back">Back</button></li>
+        <li><button id="forward">Forward</button></li>
+        <li><button id="push">Push</button></li>
+    </ul>
+
+    <div>
+        <label for="history_state">History state</label>
+        <textarea id="history_state" readonly></textarea>
+    </div>
+
+    <script src="test.js" type="module"></script>
+</body>
+</html>
