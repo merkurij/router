@@ -2,6 +2,7 @@
   "name": "url-based-router",
   "version": "1.0.2",
   "description": "",
+  "main": "src/Router",
   "directories": {
     "test": "test"
   },
