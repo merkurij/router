@@ -5,6 +5,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'router.min.js',
-        library: "router",
+        library: "url-based-router",
     },
 };
