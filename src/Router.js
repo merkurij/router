@@ -39,5 +39,33 @@ export default {
 
     load(data) {
         _load(data)
+    },
+
+    addHashParam(name, value) {
+        hashManager.set(name, value);
+        _load({hashAttrs: hashManager.getParams()});
+    },
+
+    addHashParams(params) {
+        hashManager.setAll(params);
+        _load({hashAttrs: hashManager.getParams()});
+    },
+
+    removeHashParam(name) {
+        hashManager.removeAll([name]);
+        _load({hashAttrs: hashManager.getParams()});
+    },
+
+    removeHashParams(params) {
+        hashManager.removeAll(params);
+        _load({hashAttrs: hashManager.getParams()});
+    },
+
+    getHashParam(name) {
+        return hashManager.get(name);
+    },
+
+    getHashParams() {
+        return hashManager.getParams()
     }
 };

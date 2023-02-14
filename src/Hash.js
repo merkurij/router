@@ -37,6 +37,10 @@ class Hash {
         }
     }
 
+    getParams() {
+        return Object.assign({}, this._paramsObject);
+    }
+
     set(name, value) {
         this._paramsObject[name] = value;
         this._replaceHash();
