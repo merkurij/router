@@ -1,8 +1,8 @@
 {
   "name": "url-based-router",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "main": "src/Router",
+  "main": "dist/router.min.js",
   "directories": {
     "test": "test"
   },
