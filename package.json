@@ -1,6 +1,6 @@
 {
   "name": "url-based-router",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "src/Router",
   "directories": {
