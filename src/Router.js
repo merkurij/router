@@ -14,7 +14,7 @@ const _load = (data) => {
     let url = new URL(window.location);
 
     let newURL = url.origin;
-    newURL += data.path !== undefined ? data.path : url.origin;
+    newURL += data.path !== undefined ? data.path : url.pathname;
 
     if(data.hashAttrs !== undefined) {
         hashManager.clear();
